@@ -46,7 +46,7 @@
         </div>
         <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
           <form action="#" class="space-y-6" id="formOrder">
-            <p class="font-bold text-center font-mono text-2xl mb-6">Form Payment</p>
+            <p class="font-bold text-center font-mono text-2xl mb-6">Form Pemesanan Bandeng Asap</p>
             <div>
               <label class="block mb-2 font-semibold" for="name">Nama</label>
               <input
@@ -135,11 +135,47 @@
     
 </footer>
 
+<script>document.addEventListener('DOMContentLoaded', function () {
+  const formOrder = document.getElementById('formOrder');
+  
+  formOrder.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      if (!name) {
+          alert('Please enter your name.');
+          return;
+      }
+
+      if (!email) {
+          alert('Please enter your email.');
+          return;
+      }
+
+      if (!phone) {
+          alert('Please enter your phone number.');
+          return;
+      }
+      const message = encodeURIComponent(
+          `*Form Pembelian Bandeng Asap*\n
+          Nama: ${name}\n
+          Alamat: ${email}\n
+          No Wa: ${phone}\n
+          Jenis Pesanan: Bandeng asap`
+      );
+
+      const whatsappLink = `https://wa.me/6282231614517?text=${message}`;
+      window.open(whatsappLink, "_blank");
+  });
+});
+</script>
+
 <script src="main.js"></script>
 <script src="animasi.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="nav.js"></script>
-<script src="order.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian</title>
+    <link rel="icon" href="../img/LOGO.jpg">
+    <link rel="stylesheet" href="../src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-300">
+<!-- HEADER -->
+<nav class="sticky top-0 z-50 bg-white shadow-md">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4" id="home">
+      <a href="#about" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/img/LOGO.jpg" class="ml-5 h-10" alt="Logo Ayu Songket" />
+      </a>
+      <button id="menu-toggle" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-white rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+              <li><a href="#home" class="block py-2 px-3 text-black font bg-black rounded md:bg-transparent md:text-blue-700 md:p-0  md:dark:text-blue-500" aria-current="page">Payment</a></li>
+              <li><a href="../index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+<!-- END HEADER -->
+<!-- Form -->
+<section class="bg-gray-100 py-12">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div class="lg:col-span-2 lg:py-1 mb-2">
+          <h2 class="font-bold font-serif text-2xl mb-4">Cara Pesan :</h2>
+          <p class="max-w-xl font-serif text-lg leading-relaxed">
+            1. Masukkan nama anda<br>
+            2. Masukkan alamat anda <br>
+            3. Masukkan Nomor WA yang aktif<br>
+            4. Klik Tombol Order
+          </p>
+        </div>
+        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <form action="#" class="space-y-6" id="formOrder">
+            <p class="font-bold text-center font-mono text-2xl mb-6">Form Pemesanan Otak-Otak Bandeng</p>
+            <div>
+              <label class="block mb-2 font-semibold" for="name">Nama</label>
+              <input
+                class="w-full rounded-lg border-gray-300 p-3 text-sm"
+                placeholder="Nama"
+                type="text"
+                id="name"
+                required
+              />
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block mb-2 font-semibold" for="email">Alamat</label>
+                <input
+                  class="w-full rounded-lg border-gray-300 p-3 text-sm"
+                  placeholder="Alamat"
+                  type="text"
+                  id="email"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block mb-2 font-semibold" for="phone">Nomor Anda</label>
+                <input
+                  class="w-full rounded-lg border-gray-300 p-3 text-sm"
+                  placeholder="Phone Number"
+                  type="tel"
+                  id="phone"
+                  required
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="inline-block font-mono rounded-lg bg-black px-5 py-3 font-medium text-white hover:bg-gray-800"
+                style="background-color: black;"
+                >
+                Order Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white py-8" id="contact">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <p class="mx-auto mt-6 max-w-md mb-10 font-bold text-center leading-relaxed text-black">
+            CONTACT US
+        </p>
+        <div class="flex justify-center font-bold mb-4 text-teal-600">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3961885554213!2d112.62716580000001!3d-7.95794509999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629b32074c9d3%3A0x3978a66050ef7f5e!2sBandeng%20Asap%20Anugerah%20Mina%20Lestari!5e0!3m2!1sid!2sid!4v1718090399013!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <ul class="mt-12 flex justify-center gap-6 md:gap-10">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100062948747948" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/anugrahminalestari/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="" height="25" viewBox="0 0 50 50">
+                  <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                  </svg>
+              </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="mt-6">
+      <p class="font-Poppins mb-2 text-center text-xs" >copyright &copy; 2024 || Anugerah Mina Lestari</p>
+  </div>
+    
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const formOrder = document.getElementById('formOrder');
+        
+        formOrder.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+      
+            if (!name) {
+                alert('Please enter your name.');
+                return;
+            }
+      
+            if (!email) {
+                alert('Please enter your address.');
+                return;
+            }
+      
+            if (!phone) {
+                alert('Please enter your phone number.');
+                return;
+            }
+            const message = encodeURIComponent(
+                `*Form Pembelian Otak Otak Bandeng*\n
+                Nama: ${name}\n
+                Alamat: ${email}\n
+                No Wa: ${phone}\n
+                Jenis Pesanan: Otak-Otak Bandeng`
+            );
+      
+            const whatsappLink = `https://wa.me/6282231614517?text=${message}`;
+            window.open(whatsappLink, "_blank");
+        });
+      });
+</script>
+
+<script src="main.js"></script>
+<script src="animasi.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="nav.js"></script>
+
+</body>
+</html>
